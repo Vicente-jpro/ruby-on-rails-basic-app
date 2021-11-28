@@ -1,0 +1,15 @@
+
+<div class="alert alert-primary " role="alert">
+
+    <h1>
+    Name: <%= @student.first_name %>  <%= @student.last_name %>
+    </h1>
+
+    <p>
+      <strong>Email:</strong>
+      <%= @student.email %>
+    </p>
+
+    <%= link_to 'Edit', edit_student_path(@student) , class:"btn btn-warning"%> |
+    <%= link_to 'Back', students_path , class:"btn btn-info"%>
+  </div>
